@@ -109,7 +109,7 @@ print(f"Test accuracy: {test_accuracy:.4f}")
 
 **Training Visualization:**
 
-![Training Accuracy Curve](https://i.imgur.com/YLdxNZN.png)
+![Training Accuracy Curve](training-accuracy-curve.png)
 
 The graph shows steady improvement in accuracy across the training epochs, with the model quickly learning to distinguish between different clothing items.
 
@@ -134,7 +134,6 @@ For an ankle boot image (label 9), the model outputs probability scores:
 
 The highest probability (0.536) correctly corresponds to class 9 (ankle boot).
 
-![Prediction Example](https://i.imgur.com/JGubzO8.png)
 
 ---
 
