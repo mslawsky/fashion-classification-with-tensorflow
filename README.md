@@ -17,6 +17,7 @@ A neural network implementation using TensorFlow to classify fashion items from 
 - [Dataset Details](#-dataset-details)
 - [Model Architecture](#-model-architecture)
 - [Training Process](#-training-process)
+- [Callbacks Implementation](#-callbacks-implementation)
 - [Results](#-results)
 - [Installation & Usage](#-installation--usage)
 - [Exploration Exercises](#-exploration-exercises)
@@ -115,6 +116,65 @@ The graph shows steady improvement in accuracy across the training epochs, with 
 
 ---
 
+## Callbacks Implementation 🔄
+
+Callbacks provide a powerful way to customize the training process by executing code at specific points during training. They can monitor metrics, stop training early, adjust learning rates, and more.
+
+### Custom Accuracy Threshold Callback
+
+```python
+class AccuracyThresholdCallback(tf.keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs={}):
+        if logs.get('accuracy') >= 0.98:
+            self.model.stop_training = True
+            print("\nReached 98% accuracy - stopping training!")
+```
+
+### Common Callback Use Cases:
+
+1. **Early Stopping**: Stop training when a specified accuracy threshold is reached
+2. **Model Checkpointing**: Save the model at regular intervals or when improvements occur
+   ```python
+   checkpoint_cb = tf.keras.callbacks.ModelCheckpoint(
+       'fashion_mnist_model.h5', 
+       save_best_only=True
+   )
+   ```
+3. **Learning Rate Scheduling**: Adjust learning rate during training for better convergence
+   ```python
+   lr_scheduler = tf.keras.callbacks.ReduceLROnPlateau(
+       factor=0.5,
+       patience=3
+   )
+   ```
+4. **TensorBoard Integration**: Visualize training metrics in real-time
+   ```python
+   tensorboard_cb = tf.keras.callbacks.TensorBoard(
+       log_dir='./logs'
+   )
+   ```
+5. **Custom Metrics Logging**: Track and record specific metrics during training
+
+### Implementation Example:
+
+```python
+# Create callback instances
+accuracy_cb = AccuracyThresholdCallback()
+checkpoint_cb = tf.keras.callbacks.ModelCheckpoint('fashion_mnist_model.h5')
+
+# Use in model training
+history = model.fit(
+    training_images, 
+    training_labels,
+    epochs=10,
+    callbacks=[accuracy_cb, checkpoint_cb]
+)
+```
+
+This approach improves efficiency by preventing unnecessary training iterations once desired performance is reached, saving computational resources and time. Callbacks also enable automated model saving, which helps preserve the best-performing model versions throughout the training process.
+
+---
+
 ## Results 📈 
 
 After training for just 5 epochs, the model achieves impressive results:
@@ -185,8 +245,11 @@ model.compile(optimizer=tf.optimizers.Adam(),
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-# Train the model
-model.fit(training_images, training_labels, epochs=5)
+# Create callback
+accuracy_callback = AccuracyThresholdCallback()
+
+# Train the model with callback
+model.fit(training_images, training_labels, epochs=5, callbacks=[accuracy_callback])
 
 # Make predictions
 predictions = model.predict(test_images)
@@ -227,6 +290,7 @@ This project demonstrates several essential concepts in neural network developme
 3. **Model Evaluation**: Distinguishing between training and test performance
 4. **Overfitting**: Recognizing when a model performs better on training than test data
 5. **TensorFlow/Keras API**: Working with Sequential models and configuring training
+6. **Callback System**: Customizing training behavior with callback functions
 
 ---
 
@@ -239,6 +303,7 @@ While this model achieves good accuracy, several enhancements could further impr
 3. **Regularization**: Implement dropout or L2 regularization to prevent overfitting
 4. **Hyperparameter Tuning**: Systematically search for optimal learning rates and network sizes
 5. **Transfer Learning**: Apply pre-trained models to achieve even higher accuracy
+6. **Advanced Callbacks**: Implement custom callbacks for more sophisticated training control
 
 ---
 
