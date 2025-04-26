@@ -18,7 +18,7 @@ A neural network implementation using TensorFlow to classify fashion items from 
 - [Model Architecture](#model-architecture-)
 - [Training Process](#training-process-)
 - [Callbacks Implementation](#callbacks-implementation-)
-- [Convolutions & Pooling](#convolutions-&-pooling-)
+- [Convolutions & Pooling](#convolutions-and-pooling-)
 - [Results](#results-)
 - [Installation & Usage](#installation--usage-)
 - [Exploration Exercises](#exploration-exercises-)
@@ -327,7 +327,7 @@ This project demonstrates several essential concepts in neural network developme
 
 ---
 
-## Convolutions & Pooling ⚙️
+## Convolutions and Pooling ⚙️
 
 Convolutional Neural Networks (CNNs) greatly improve image classification performance by learning spatial hierarchies of features through convolutional and pooling operations.
 
