@@ -13,16 +13,16 @@ A neural network implementation using TensorFlow to classify fashion items from 
 ---
 
 ## Table of Contents 📋 
-- [Project Overview](#-project-overview)
-- [Dataset Details](#-dataset-details)
-- [Model Architecture](#-model-architecture)
-- [Training Process](#-training-process)
-- [Callbacks Implementation](#-callbacks-implementation)
-- [Results](#-results)
-- [Installation & Usage](#-installation--usage)
-- [Exploration Exercises](#-exploration-exercises)
-- [Key Learnings](#-key-learnings)
-- [Future Improvements](#-future-improvements)
+- [Project Overview](#project-overview-)
+- [Dataset Details](#dataset-details-)
+- [Model Architecture](#model-architecture-)
+- [Training Process](#training-process-)
+- [Callbacks Implementation](#callbacks-implementation-)
+- [Results](#results-)
+- [Installation & Usage](#installation--usage-)
+- [Exploration Exercises](#exploration-exercises-)
+- [Key Learnings](#key-learnings-)
+- [Future Improvements](#future-improvements-)
 
 ---
 
