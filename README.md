@@ -340,6 +340,7 @@ Input Image → Conv2D → Feature Maps → MaxPooling → Reduced Feature Maps 
 ```
 
 ![Convolution Process](convolution-process.png)
+_Image adapted from [Sumit Saha's "A Comprehensive Guide to Convolutional Neural Networks - the ELI5 way"](https://medium.com/data-science/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)._
 
 Each convolutional layer learns to detect different features:
 - First layers: Edges, corners, simple textures
