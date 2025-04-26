@@ -349,7 +349,7 @@ Each convolutional layer learns to detect different features:
 
 We can visualize how the network "sees" different clothing items by examining the activations of convolutional layers:
 
-![CNN Activations](https://raw.githubusercontent.com/user/fashion-mnist-classification/main/images/cnn_activations.png)
+![CNN Activations](cnn-activations.png)
 
 The above visualization shows how three different shoe images activate various filters in our convolutional layers. Notice how similar patterns emerge despite differences in the original images.
 
