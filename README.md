@@ -18,7 +18,7 @@ A neural network implementation using TensorFlow to classify fashion items from 
 - [Model Architecture](#model-architecture-)
 - [Training Process](#training-process-)
 - [Callbacks Implementation](#callbacks-implementation-)
-- [Convolutions & Pooling](#convolutions--pooling-)
+- [Convolutions & Pooling](#convolutions-&-pooling-)
 - [Results](#results-)
 - [Installation & Usage](#installation--usage-)
 - [Exploration Exercises](#exploration-exercises-)
