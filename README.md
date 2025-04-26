@@ -339,7 +339,7 @@ Convolutions scan an input image with small filters (typically 3x3) to extract f
 Input Image → Conv2D → Feature Maps → MaxPooling → Reduced Feature Maps → ...
 ```
 
-![Convolution Process](https://raw.githubusercontent.com/user/fashion-mnist-classification/main/images/convolution_process.png)
+![Convolution Process](convolution-process.png)
 
 Each convolutional layer learns to detect different features:
 - First layers: Edges, corners, simple textures
