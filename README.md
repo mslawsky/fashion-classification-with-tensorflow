@@ -245,11 +245,12 @@ While this model achieves good accuracy, several enhancements could further impr
 
 ## 📫 Contact
 
-For inquiries about this project:
-- [GitHub Profile](https://github.com/yourusername)
-- [LinkedIn](https://www.linkedin.com/in/yourprofile/)
-- [Email](mailto:your.email@example.com)
+For inquiries about this analysis:
+- [LinkedIn Profile](https://www.linkedin.com/in/melissaslawsky/)
+- [Client Results](https://melissaslawsky.com/portfolio/)
+- [Tableau Portfolio](https://public.tableau.com/app/profile/melissa.slawsky1925/vizzes)
+- [Email](mailto:melissa@melissaslawsky.com)
 
 ---
 
-© 2025 Your Name. All Rights Reserved.
+© 2025 Melissa Slawsky. All Rights Reserved.
