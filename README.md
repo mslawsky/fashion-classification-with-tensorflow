@@ -287,7 +287,7 @@ predictions = model.predict(test_images)
 
 ---
 
-## Exploration Exercises 🧪 
+## Exploration Exercises 🌎 
 
 The notebook includes several exercises to deepen your understanding:
 
@@ -311,7 +311,7 @@ The notebook includes several exercises to deepen your understanding:
 
 ---
 
-## Key Learnings 🔍 
+## Key Learnings 🔎
 
 This project demonstrates several essential concepts in neural network development:
 
@@ -327,7 +327,7 @@ This project demonstrates several essential concepts in neural network developme
 
 ---
 
-## Convolutions & Pooling 🔍
+## Convolutions & Pooling ⚙️
 
 Convolutional Neural Networks (CNNs) greatly improve image classification performance by learning spatial hierarchies of features through convolutional and pooling operations.
 
