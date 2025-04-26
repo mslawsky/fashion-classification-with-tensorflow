@@ -1,4 +1,4 @@
-# 👕 Fashion MNIST Classification with TensorFlow
+# Fashion MNIST Classification with TensorFlow 👕 
 
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
@@ -12,7 +12,7 @@ A neural network implementation using TensorFlow to classify fashion items from 
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents 📋 
 - [Project Overview](#-project-overview)
 - [Dataset Details](#-dataset-details)
 - [Model Architecture](#-model-architecture)
@@ -25,7 +25,7 @@ A neural network implementation using TensorFlow to classify fashion items from 
 
 ---
 
-## 🔎 Project Overview
+## Project Overview 🔎 
 
 This project builds a neural network model to recognize and classify clothing items from grayscale images. Unlike traditional "Hello World" examples that learn simple linear relationships, this project tackles a more challenging computer vision problem that showcases the power of neural networks in image recognition tasks.
 
@@ -38,7 +38,7 @@ This project builds a neural network model to recognize and classify clothing it
 
 ---
 
-## 📊 Dataset Details
+## Dataset Details 📊 
 
 The Fashion MNIST dataset includes 70,000 grayscale images of clothing items (28x28 pixels):
 - 60,000 training images
@@ -65,7 +65,7 @@ Each image is labeled with one of 10 clothing categories:
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture 🧠 
 
 The neural network uses a straightforward architecture optimized for image classification:
 
@@ -94,7 +94,7 @@ This architecture strikes a balance between simplicity and effectiveness for thi
 
 ---
 
-## 🔄 Training Process
+## Training Process 🔄 
 
 The model is trained for 5 epochs using the prepared dataset:
 
@@ -115,7 +115,7 @@ The graph shows steady improvement in accuracy across the training epochs, with 
 
 ---
 
-## 📈 Results
+## Results 📈 
 
 After training for just 5 epochs, the model achieves impressive results:
 
@@ -138,7 +138,7 @@ The highest probability (0.536) correctly corresponds to class 9 (ankle boot).
 
 ---
 
-## 🚀 Installation & Usage
+## Installation & Usage 🚀 
 
 ### Prerequisites
 - Python 3.6+
@@ -195,7 +195,7 @@ predictions = model.predict(test_images)
 
 ---
 
-## 🧪 Exploration Exercises
+## Exploration Exercises 🧪 
 
 The notebook includes several exercises to deepen your understanding:
 
@@ -219,7 +219,7 @@ The notebook includes several exercises to deepen your understanding:
 
 ---
 
-## 🔍 Key Learnings
+## Key Learnings 🔍 
 
 This project demonstrates several essential concepts in neural network development:
 
@@ -231,7 +231,7 @@ This project demonstrates several essential concepts in neural network developme
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements 🔮 
 
 While this model achieves good accuracy, several enhancements could further improve performance:
 
@@ -243,7 +243,7 @@ While this model achieves good accuracy, several enhancements could further impr
 
 ---
 
-## 📫 Contact
+## Contact 📫 
 
 For inquiries about this analysis:
 - [LinkedIn Profile](https://www.linkedin.com/in/melissaslawsky/)
